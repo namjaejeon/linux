@@ -191,7 +191,6 @@ do_non_resident_extend:
 				err = -EIO;
 			goto err_out;
 		}
-		m = ctx->mrec;
 		a = ctx->attr;
 		BUG_ON(!a->non_resident);
 		BUG_ON(old_i_size != (loff_t)
